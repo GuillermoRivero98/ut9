@@ -1,0 +1,19 @@
+1 ¿Cuáles son las operaciones básicas involucradas en estos dos algoritmos?
+
+Insertar: Insertar un nuevo elemento en el APO (Árbol Parcialmente Ordenado).
+SuprimeMinimo: Extraer el elemento mínimo del APO, manteniendo la propiedad de APO del árbol.
+
+2 ¿Cuál es el orden de estas operaciones cuando el árbol APO se representa en la forma estándar (árbol binario)?
+
+Insertar: O(log n) - Insertar un elemento en un APO representado como un árbol binario implica encontrar el lugar 
+correcto para el nuevo elemento, ajustando el árbol para mantener la propiedad de APO.
+SuprimeMinimo: O(log n) - Extraer el mínimo implica eliminar la raíz, reemplazarla con el último elemento del árbol, 
+y luego restaurar la propiedad de APO a través de un proceso de ajuste descendente
+
+3 ¿Cuál es el orden de estas operaciones cuando el árbol APO se representa mediante un vector con posiciones de 1 a N?
+
+Insertar: O(log n) - Insertar un nuevo elemento implica agregarlo al final del vector y 
+luego realizar un ajuste ascendente para restaurar la propiedad de APO.
+SuprimeMinimo: O(log n) - Extraer el mínimo implica intercambiar la raíz con el último elemento del vector, 
+reducir el tamaño del vector en uno, y luego realizar un ajuste descendente para restaurar la propiedad de APO.
+

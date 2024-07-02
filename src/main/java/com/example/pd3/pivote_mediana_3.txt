@@ -1,0 +1,13 @@
+function encuentraPivoteMedianaDeTres(arr, inicio, fin):
+    medio = inicio + (fin - inicio) / 2
+    // Ordena inicio, medio y fin
+    if arr[inicio] > arr[medio]:
+        swap(arr[inicio], arr[medio])
+    if arr[inicio] > arr[fin]:
+        swap(arr[inicio], arr[fin])
+    if arr[medio] > arr[fin]:
+        swap(arr[medio], arr[fin])
+    // Pivote es el valor del medio
+    return medio
+
+tiempo O(nlogn) en promedio.

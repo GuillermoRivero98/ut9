@@ -1,0 +1,13 @@
+function encuentraPivoteMedianaDeMedianas(arr, inicio, fin):
+    // Divide el arreglo en grupos de tamaño 5
+    for i from inicio to fin by 5:
+        subgrupo = arr[i...min(i+4, fin)]
+        // Ordena subgrupo
+        insertionSort(subgrupo)
+        // Coloca la mediana del subgrupo al frente
+        swap(arr[i], arr[i + (min(i+4, fin) - i) / 2])
+
+    // Encuentra la mediana de las medianas
+    return encuentraPivoteMedianaDeTres(arr, inicio, inicio + ((fin - inicio) / 5) / 2, fin)
+
+tiempo O(nlogn) en el peor caso.

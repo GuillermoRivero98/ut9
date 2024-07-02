@@ -1,0 +1,17 @@
+function cocktailSort(arr):
+    start = 0
+    end = length(arr) - 1
+    while start < end:
+        swapped = false
+        for i from start to end:
+            if arr[i] > arr[i + 1]:
+                swap(arr[i], arr[i + 1])
+                swapped = true
+        end = end - 1
+        for i from end to start:
+            if arr[i] > arr[i + 1]:
+                swap(arr[i], arr[i + 1])
+                swapped = true
+        start = start + 1
+        if not swapped:
+            break

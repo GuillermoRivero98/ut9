@@ -1,0 +1,5 @@
+function encuentraPivoteAleatorio(arr, inicio, fin):
+    pivoteIndex = random(inicio, fin)
+    return pivoteIndex
+
+tiempo ej: O(nlogn) en promedio.
